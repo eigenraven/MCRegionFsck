@@ -42,3 +42,9 @@ application {
     // Define the main class for the application.
     mainClass = "me.eigenraven.mcfsck.App"
 }
+
+tasks.jar {
+    manifest.attributes(
+        "Main-Class" to "me.eigenraven.mcfsck.App"
+    )
+}
